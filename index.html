@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js"defer></script>
+    <title>Abdel-Hakim</title>
+<body>
+<header>
+    <a href="#" class="logo"><span>G</span>odFather</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banniere" onclick="toggleMenu();">Tableau</a></li>
+        <li><a href="#apropos" onclick="toggleMenu();">Film</a></li>
+        <li><a href="#menu" onclick="toggleMenu();">Les Personnages</a></li>
+        <li><a href="#expert" onclick="toggleMenu();">Les Acteurs</a></li>
+        <a href="#" class="btn-reserve"onclick="toggleMenu();">---Fin---</a>
+    </ul>
+</header>
+<section class="banniere" id="banniere">
+    <div class="contenu">
+
+        <div class="namepage"> 
+            <div class="formdata">
+              
+            <form onsubmit="event.preventDefault();" autocomplete="off">
+                
+          
+                <label>Parrain</label>
+                <input type="text" class="parrain" value=""  placeholder="Don Vito Corleone">
+          
+                <label>Sucesseur</label>
+                <input type="text" class="sucesseur" value=""  placeholder=" Michael Corleone">
+          
+                <label>Avocat</label>
+                <input type="text" class="avocat" value=""  placeholder="Tom Hagen">
+          
+                <label>Banquier</label>
+                <input type="text" class="banquier" value="" placeholder="Fredo Corleone">
+          
+                <div style="width:100%">
+                <input type="submit"  value="AJOUTER"  class="button">
+                
+                </div>
+              </form>
+          
+            </div>
+          
+            <div class="display_table">
+                        <table class="list" id="nameList">
+                              <thead>
+                                   <tr>
+                                <th>Id</th>         
+                                <th>Parrain</th>
+                                <th>Sucesseur</th>
+                                <th>Avocat</th>
+                                <th>Banquier</th>                      
+                                <th>Modifier</th>
+                            </tr>
+                              </thead>
+                              <tbody>
+          
+                              </tbody>
+                          </table>
+             </div>
+          </div> 
+
+    </div>
+</section>
+<section class="apropos" id="apropos">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte"><span>F</span>ilm impitoyable</h2>
+            <p>Le Parrain (The Godfather) est un film américain de Francis Ford Coppola, sorti en 1972.
+
+                Produit par les studios Paramount, le film est une adaptation du roman du même nom de Mario Puzo. L'histoire se déroule de 1945 à 1955 et est centrée sur la famille Corleone, une des plus grandes familles de la mafia américaine. Le film aborde le sujet de la succession du patriarche de la famille, Vito Corleone dit le « Parrain » (Marlon Brando), et de l'ascension de son plus jeune fils, Michael (Al Pacino), qui initialement souhaite rester en dehors des activités criminelles de la famille. Mais, à cause d'un enchaînement de circonstances tragiques, Michael finit par en devenir le membre le plus impitoyable et le plus important.
+                
+                Le Parrain est considéré comme l'un des plus grands films du cinéma mondial1 et l'un des plus influents, spécialement dans le genre des films de gangsters2. Il est classé à la deuxième place des meilleurs films du cinéma nord-américain par l'American Film Institute (AFI) (derrière Citizen Kane)3. En 1990, le film est sélectionné par Le National Film Registry pour être conservé à la Bibliothèque du Congrès des États-Unis pour son « importance culturelle, historique ou esthétique. 
+            </p>
+        </div>
+        <div class="col50">
+            <div class="img">
+                <iframe width="700" height="650" src="https://www.youtube.com/embed/sY1S34973zA?controls=0&amp;start=47" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <video src="/video/"html5.mp4"controls></video>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="menu" id="menu">
+    <div class="titre">
+        <h2 class="titre-texte"><span>P</span>ersonnages</h2>
+       
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/father2.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Don Vito Corleone</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/father3.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Michael Corleone</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/father4.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Tom Hagen</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/father5.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Fredo Corleone</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/father6.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Robert Niro</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/father7.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Simonetta Stephanolie</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/father8.JPG" alt="">
+            </div>
+            <div class="text">
+                <h3>Morgana</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/father9.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Jeannie</h3>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="titre">
+    <a href="#" class="btn1">Vers Le haut</a>
+ </div>
+</section>
+<section class="expert" id="expert">
+    <div class="titre">
+        <h2 class="titre-texte">Nos <span>A</span>cteurs</h2>
+        
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/father2.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Don Vito Corleone</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/father3.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Michael Corleone</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/father4.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Tom Hagen</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/father5.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Fredo Corleone</h3>
+            </div>
+        </div>
+    </div>
+ </div>
+</section>
+
+<div class="defileParent">
+    <span class="defile" 
+    data-text="C'est un Film inspiré d'une histoire vraie qui s'est déroulée de 1945-1955...Mario Puzo ALIAS LE PARRAIN"> 
+    </span>
+    </div>
+
+
+
+    <div>
+        <main id="camera">
+        <canvas id="camera--sensor"></canvas>
+        <video id="camera--view" autoplay playsinline></video>
+        <img src="//:0" alt="" id="camera--output">
+        <button id="camera--trigger">Take a picture</button>
+        </main>
+    </div>
+    
+ 
+ <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header =document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0 );
+     });
+
+     function toggleMenu(){
+         const tmenuToggle = document.querySelector('.menuToggle');
+         const navbar = document.querySelector('.navbar');
+         navbar.classList.toggle('active');
+         menuToggle.classList.toggle('active');
+     }
+ </script>
+</body>
+</html>
