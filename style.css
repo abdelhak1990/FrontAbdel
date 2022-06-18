@@ -72,43 +72,94 @@
     color:#fff;
   }
 
+ 
+
+  .imbox .button1 {
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position:absolute;
+    color: #eeeeee;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #153f00;
+    padding: 3px 20px;
+    margin: 0 auto;
+  }
+  .imbox .button1 span {
+    position: relative;
+    z-index: 1;
+  
+  }
+  .imbox .button1:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 470%;
+    width: 140%;
+    background: #52b71f;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+    transform: translateX(-100%) translateY(-25%) rotate(45deg);
+  }
+  .imbox .button1:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
 
 
 
 
 
 
+.imbox .button2 {
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    color: #eeeeee;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #153f00;
+    padding: 3px 20px;
+    margin: 0 auto;
+  }
+  .imbox .button2 span {
+    position: relative;
+    z-index: 1;
+  
+  }
+  .imbox .button2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 470%;
+    width: 140%;
+    background: #52b71f;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+    transform: translateX(-100%) translateY(-25%) rotate(45deg);
+  }
+  .imbox .button2:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*{
+  *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -144,6 +195,12 @@ header{
     color: #fb911f;
 }
 
+.display_table .list{
+    display: flex;
+  position:relative;
+
+}
+
 .navbar{
     display: flex;
     position: relative;
@@ -175,7 +232,7 @@ header .navbar li a:hover{
     border-bottom: 2px solid #fb911f;
 }
 
-.banniere{
+.tableau{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -186,11 +243,11 @@ header .navbar li a:hover{
     background-size: cover;
 }
 
-.banniere .contenu{
+.tableau .contenu{
     max-width: 70%;
     text-align: center;
 }
-.banniere .contenu h2{
+.tableau .contenu h2{
     color: #fff;
     font-size: 3em;
     text-transform: capitalize;
@@ -279,65 +336,76 @@ section{
     flex-direction: column;
 }
 
-.menu{
+.personnages{
     margin-top: -100px;
 }
 
-.menu .contenu{
+.personnages .contenu{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 40px;
 }
 
-.menu .contenu .box{
+.personnages .contenu .box{
     width: 350px;
     margin: 20px;
     border: 20px solid #fff;
     box-shadow: 20px 15px 35px rgba(0,0,0, 0.8);
 }
 
-.menu .contenu .box .imbox{
+.personnages .contenu .box .imbox{
     position: relative;
     width: 100%;
     height: 300px;
+   
 }
 
-.menu .contenu .box .imbox img{
+img {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+img:hover{
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+  
+.personnages .contenu .box .imbox img{
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 300px;
     object-fit: cover;
+
 }
 
-.menu .contenu .box .text{
+.personnages .contenu .box .text{
     text-align: center;
     font-weight: 300px;
     color: #111;
 }
 
-.menu .contenu .box .text h3{
+.personnages .contenu .box .text h3{
     font-weight: 400;
 }
 
-.expert{
+.acteurs{
     margin-top:-100px;
 }
 
-.expert .contenu{
+.acteurs .contenu{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
 }
 
-.expert .contenu .box{
+.acteurs .contenu .box{
     width: 250px;
     margin: 15px;
 }
-.expert .contenu .box img{
+.acteurs .contenu .box img{
     position: relative;
     width: 100%;
     height: 300px;
@@ -346,70 +414,10 @@ section{
     object-fit: cover;
 }
 
-.expert .contenu .box h3{
+.acteurs .contenu .box h3{
     color: #111;
     font-weight: 400;
     text-align: center;
-}
-
-.temoignage{
-    background-image: url(./images/bg2.jpg);
-    background-size: cover;
-}
-
-.temoignage .contenu{
-    display: flex;
-    margin-top: 40px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.temoignage .contenu .box{
-    width: 340px;
-    margin: 20px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 15px;
-    padding: 40px;
-}
-
-.temoignage .contenu .box .imbox{
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
-    position: relative;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.temoignage .contenu .box .imbox img{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left: 0;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-}
-
-.temoignage .contenu .box .text{
-    text-align: center;
-    color: #666;
-    font-style: italic;
-}
-
-.temoignage .contenu .box .text h3{
-    color: #fb911f;
-    margin-top: 20px;
-    font-size: 1em;
-    font-weight: 600;
 }
 
 .blanc .titre-texte{
@@ -421,48 +429,7 @@ section{
     color: #fff;
 }
 
-.contact{
-    background-image: url(./images/img-form.jpg);
-    background-size: cover;
-    box-shadow: 2px 2px 12px rgba(0,0,0, 0.8);
-    width: 100%;
-    background-position: unset;
-}
 
-.contactform{
-    padding: 75px 50px;
-    background: #fff;
-    box-shadow: 5px 15px 50px rgba(0,0,0, 0.8);
-    max-width: 500px;
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 38%;
-}
-
-.contactform .inputboite{
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.contactform h3{
-    color: #111;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.contactform .inputboite input,
-.contactform .inputboite textarea{
-    width: 100%;
-    border: 1px solid #555;
-    padding: 10px;
-    color: #111;
-    outline: none;
-    font-size: 16px;
-    font-weight: 300;
-    resize: none;
-}
 
 
 
@@ -548,7 +515,7 @@ header.sticky .menuToggle{
 }
 
 
-.banniere .contenu h2{
+.tableau .contenu h2{
     font-size: 2em;
 }
 
@@ -559,11 +526,11 @@ header.sticky .menuToggle{
 .contenu p:nth-child(2){
     font-size: 1.2em;
 }
-.expert{
+.acteurs{
     margin-top: 0px;
 }
 
-.menu{
+.personnages{
     margin-top: 0px;
 }
 
@@ -571,22 +538,6 @@ header.sticky .menuToggle{
     display: flex;
     flex-direction: column;
 }
-
-
-
-.temoignage h2{
-    font-size: 2em;
-    text-align: center;
-}
-
-.temoignage p{
-text-align: center;
-}
-
-.contactform{
-    margin-left: 25%;
-}
-
 
     .row .col50 {
         position: relative;
@@ -604,7 +555,7 @@ text-align: center;
 
 @media (max-width: 480px)
 {
-    .banniere .contenu h2{
+    .tableau .contenu h2{
         font-size: 2.2em;
         color: #fff;
     }
@@ -618,14 +569,6 @@ text-align: center;
 
    
 }
-
-
-
-
-
-
-
-
 
 .button {
     border: 1px transparent;
@@ -775,16 +718,69 @@ text-align: center;
     
     
     }
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

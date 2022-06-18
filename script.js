@@ -1,4 +1,22 @@
 
+
+ window.addEventListener('scroll', function(){
+     const header =document.querySelector('header');
+     header.classList.toggle("sticky", window.scrollY > 0 );
+ });
+
+ function toggleMenu(){
+     const tmenuToggle = document.querySelector('.menuToggle');
+     const navbar = document.querySelector('.navbar');
+     navbar.classList.toggle('active');
+     menuToggle.classList.toggle('active');
+ }
+
+
+
+
+
+
 const baseStorageKey = 'account~';
 function initOnLoad() {
   const allLocalStorageKeys = Object.keys(localStorage);
@@ -145,12 +163,98 @@ cameraTrigger.onclick = function() {
 };
 window.addEventListener("load", cameraStart, false);
 
+function Clean() {
+  document.getElementById("ok").style.visibility = "hidden";
+}
+function Ajout() {
+  document.getElementById("ok").style.visibility = "visible";
+}
+function Clean1() {
+  document.getElementById("ok1").style.visibility = "hidden";
+}
+function Ajout1() {
+  document.getElementById("ok1").style.visibility = "visible";
+}
+function Clean2() {
+  document.getElementById("ok2").style.visibility = "hidden";
+}
+function Ajout2() {
+  document.getElementById("ok2").style.visibility = "visible";
+}
+function Clean3() {
+  document.getElementById("ok3").style.visibility = "hidden";
+}
+function Ajout3() {
+  document.getElementById("ok3").style.visibility = "visible";
+}
+function Clean4() {
+  document.getElementById("ok4").style.visibility = "hidden";
+}
+
+function Ajout4() {
+  document.getElementById("ok4").style.visibility = "visible";
+}
+function Clean5() {
+  document.getElementById("ok5").style.visibility = "hidden";
+}
+function Ajout5() {
+  document.getElementById("ok5").style.visibility = "visible";
+}
+function Clean6() {
+  document.getElementById("ok6").style.visibility = "hidden";
+}
+function Ajout6() {
+  document.getElementById("ok6").style.visibility = "visible";
+}
+function Clean7() {
+  document.getElementById("ok7").style.visibility = "hidden";
+}
+function Ajout7() {
+  document.getElementById("ok7").style.visibility = "visible";
+}
 
 
 
 
 
 
+
+
+
+
+
+
+/*let add = document.getElementById("").style.visibility="visible";
+
+window.addEventListener("DOMContentLoaded", () =>{
+  initOnLoad();
+});
+
+let btn2 = document.querySelector(".button2")
+btn2.addEventListener("click", del);
+
+
+
+
+
+
+
+
+
+/*removeElement(document.getElementById("ok"));*/
+
+
+
+
+
+/*var el = document.getElementById('ok');
+el.parentNode.appendChild(el);
+
+function addElement(ele) {
+  ele.parentNode.appendChild(ele);
+}
+
+addElement(document.getElementById("ok"));*/
 
 
 

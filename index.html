@@ -15,14 +15,14 @@
     <a href="#" class="logo"><span>G</span>odFather</a>
     <div class="menuToggle" onclick="toggleMenu();"></div>
     <ul class="navbar">
-        <li><a href="#banniere" onclick="toggleMenu();">Tableau</a></li>
-        <li><a href="#apropos" onclick="toggleMenu();">Film</a></li>
-        <li><a href="#menu" onclick="toggleMenu();">Les Personnages</a></li>
-        <li><a href="#expert" onclick="toggleMenu();">Les Acteurs</a></li>
+        <li><a href="#tableau" onclick="toggleMenu();">Tableau</a></li>
+        <li><a href="#film" onclick="toggleMenu();">Film</a></li>
+        <li><a href="#personnages" onclick="toggleMenu();">Les Personnages</a></li>
+        <li><a href="#acteurs" onclick="toggleMenu();">Les Acteurs</a></li>
         <a href="#" class="btn-reserve"onclick="toggleMenu();">---Fin---</a>
     </ul>
 </header>
-<section class="banniere" id="banniere">
+<section class="tableau" id="tableau">
     <div class="contenu">
 
         <div class="namepage"> 
@@ -72,7 +72,7 @@
 
     </div>
 </section>
-<section class="apropos" id="apropos">
+<section class="film" id="film">
     <div class="row">
         <div class="col50">
             <h2 class="titre-texte"><span>F</span>ilm impitoyable</h2>
@@ -92,7 +92,7 @@
     </div>
 
 </section>
-<section class="menu" id="menu">
+<section class="personnages" id="personnages">
     <div class="titre">
         <h2 class="titre-texte"><span>P</span>ersonnages</h2>
        
@@ -100,23 +100,29 @@
     <div class="contenu">
         <div class="box">
             <div class="imbox">
-                <img src="./images/father2.jpg" alt="">
+                <img id="ok" src="./images/father2.jpg" alt="">
+                <button type="button" class="button1" onclick="Clean()"><span>delete</span></button>
+                <button type="button" class="button2" onclick="Ajout()"><span>add</span></button>
             </div>
             <div class="text">
-                <h3>Don Vito Corleone</h3>
+                <h3>Vito Corleone</h3>
             </div>
         </div>
         <div class="box">
             <div class="imbox">
-                <img src="./images/father3.jpg" alt="">
+                <img id="ok1"src="./images/father3.jpg" alt="">
+                <button type="button"class="button1" onclick="Clean1()"><span>delete</span></button>
+                <button type="button" class="button2"onclick="Ajout1()"><span>add</span></button>
             </div>
             <div class="text">
-                <h3>Michael Corleone</h3>
+                <h3>Michael</h3>
             </div>
         </div>
         <div class="box">
             <div class="imbox">
-                <img src="./images/father4.jpg" alt="">
+                <img id="ok2"src="./images/father4.jpg" alt="">
+                <button type="button"class="button1" onclick="Clean2()"><span>delete</span></button>
+                <button type="button" class="button2"onclick="Ajout2()"><span>add</span></button>
             </div>
             <div class="text">
                 <h3>Tom Hagen</h3>
@@ -124,15 +130,19 @@
         </div>
         <div class="box">
             <div class="imbox">
-                <img src="./images/father5.jpg" alt="">
+                <img id="ok3"src="./images/father5.jpg" alt="">
+                <button type="button" class="button1"onclick="Clean3()"><span>delete</span></button>
+                <button type="button"class="button2" onclick="Ajout3()"><span>add</span></button>
             </div>
             <div class="text">
-                <h3>Fredo Corleone</h3>
+                <h3>Fredo</h3>
             </div>
         </div>
         <div class="box">
             <div class="imbox">
-                <img src="./images/father6.jpg" alt="">
+                <img id="ok4"src="./images/father6.jpg" alt="">
+                <button type="button" class="button1"onclick="Clean4()"><span>delete</span></button>
+                <button type="button" class="button2"onclick="Ajout4()"><span>add</span></button>
             </div>
             <div class="text">
                 <h3>Robert Niro</h3>
@@ -140,15 +150,19 @@
         </div>
         <div class="box">
             <div class="imbox">
-                <img src="./images/father7.jpg" alt="">
+                <img id="ok5"src="./images/father7.jpg" alt="">
+                <button type="button"class="button1" onclick="Clean5()"><span>delete</span></button>
+                <button type="button" class="button2"onclick="Ajout5()"><span>add</span></button>
             </div>
             <div class="text">
-                <h3>Simonetta Stephanolie</h3>
+                <h3>Simonetta</h3>
             </div>
         </div>
         <div class="box">
             <div class="imbox">
-                <img src="./images/father8.JPG" alt="">
+                <img id="ok6"src="./images/father8.JPG" alt="">
+                <button type="button" class="button1"onclick="Clean6()"><span>delete</span></button>
+                <button type="button" class="button2"onclick="Ajout6()"><span>add</span></button>
             </div>
             <div class="text">
                 <h3>Morgana</h3>
@@ -156,7 +170,9 @@
         </div>
         <div class="box">
             <div class="imbox">
-                <img src="./images/father9.jpg" alt="">
+                <img id="ok7"src="./images/father9.jpg" alt="">
+                <button type="button"class="button1" onclick="Clean7()"><span>delete</span></button>
+                <button type="button" class="button2"onclick="Ajout7()"><span>add</span></button>
             </div>
             <div class="text">
                 <h3>Jeannie</h3>
@@ -168,7 +184,7 @@
     <a href="#" class="btn1">Vers Le haut</a>
  </div>
 </section>
-<section class="expert" id="expert">
+<section class="acteurs" id="acteurs">
     <div class="titre">
         <h2 class="titre-texte">Nos <span>A</span>cteurs</h2>
         
@@ -179,7 +195,7 @@
                 <img src="./images/father2.jpg" alt="">
             </div>
             <div class="text">
-                <h3>Don Vito Corleone</h3>
+                <h3>Vito Corleone</h3>
             </div>
         </div>
         <div class="box">
@@ -187,7 +203,7 @@
                 <img src="./images/father3.jpg" alt="">
             </div>
             <div class="text">
-                <h3>Michael Corleone</h3>
+                <h3>Michael</h3>
             </div>
         </div>
         <div class="box">
@@ -203,18 +219,12 @@
                 <img src="./images/father5.jpg" alt="">
             </div>
             <div class="text">
-                <h3>Fredo Corleone</h3>
+                <h3>Fredo</h3>
             </div>
         </div>
     </div>
  </div>
 </section>
-
-<div class="defileParent">
-    <span class="defile" 
-    data-text="C'est un Film inspiré d'une histoire vraie qui s'est déroulée de 1945-1955...Mario Puzo ALIAS LE PARRAIN"> 
-    </span>
-    </div>
 
 
 
@@ -228,18 +238,6 @@
     </div>
     
  
- <script type="text/javascript">
-     window.addEventListener('scroll', function(){
-         const header =document.querySelector('header');
-         header.classList.toggle("sticky", window.scrollY > 0 );
-     });
 
-     function toggleMenu(){
-         const tmenuToggle = document.querySelector('.menuToggle');
-         const navbar = document.querySelector('.navbar');
-         navbar.classList.toggle('active');
-         menuToggle.classList.toggle('active');
-     }
- </script>
 </body>
 </html>
