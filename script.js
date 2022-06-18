@@ -224,14 +224,6 @@ function Ajout7() {
 
 
 
-/*let add = document.getElementById("").style.visibility="visible";
-
-window.addEventListener("DOMContentLoaded", () =>{
-  initOnLoad();
-});
-
-let btn2 = document.querySelector(".button2")
-btn2.addEventListener("click", del);
 
 
 
@@ -241,20 +233,30 @@ btn2.addEventListener("click", del);
 
 
 
-/*removeElement(document.getElementById("ok"));*/
 
 
 
 
 
-/*var el = document.getElementById('ok');
-el.parentNode.appendChild(el);
 
-function addElement(ele) {
-  ele.parentNode.appendChild(ele);
-}
 
-addElement(document.getElementById("ok"));*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

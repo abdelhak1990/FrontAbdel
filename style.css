@@ -72,7 +72,18 @@
     color:#fff;
   }
 
- 
+ .col50 .img{
+  display: flex;
+  position: relative;
+  }
+
+
+
+
+
+
+
+
 
   .imbox .button1 {
     border: none;
@@ -718,10 +729,6 @@ header.sticky .menuToggle{
     
     
     }
-
-
-
-
 
 
 
